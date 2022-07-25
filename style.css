@@ -30,6 +30,7 @@ body {
 
 /* Re-usable Utiity Classes  */
 
+.tall-20 { min-height: 20vh: }
 .tall-50 { min-height: 50vh; }
 .tall-60 { min-height: 60vh; }
 .tall-70 { min-height: 70vh; }
@@ -53,7 +54,6 @@ body {
 
 .light-text     { color: white; } 
 .featured-text  { color: #183039; } 
-
 
 .left   { text-align: left; }
 .center { text-align: center; }
@@ -152,6 +152,24 @@ footer h2 {
     opacity: 0.7;
 }
 
+.button {
+    font-size: 0.8rem;
+    padding: 0.75rem 1rem;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    border: 1.5px solid #183039;
+    color: #183039;
+    border-radius: 20px;
+    display: inline-block;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+}
+
+.button:hover {
+    color: white;
+    background-color: #183039;
+}
+
 /* Images & Background Images */
 
 .bg-image {
@@ -165,6 +183,7 @@ footer h2 {
 .bg-window {background-image: url('/images/negroni-2.jpg')}
 .bg-plant {background-image: url('/images/negroni-4.jpg')}
 .bg-water {background-image: url('/images/water-light.jpg')}
+.bg-map   {background-image: url('/images/isle-of-dogs-map.png')}  
 
 
 /* SM Media Query   */
