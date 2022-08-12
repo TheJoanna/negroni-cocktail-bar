@@ -1,3 +1,13 @@
+:root {
+    --featured: #183039;
+    --dark: #24282B; 
+    --light-text: white;
+    --serif: font-family: 'Martel', serif;
+    --heading: font-family: 'Didot', Georgia, serif;
+}
+
+
+
 * {
     padding: 0;
     margin: 0;
@@ -49,11 +59,11 @@ body {
 .margin-b-0 { margin-bottom: 0; }
 
 
-.bg-featured { background-color: #183039;  }
-.bg-dark     { background-color: #24282B;  }
+.bg-featured { background-color: var(--featured);  }
+.bg-dark     { background-color: var(--dark);  }
 
-.light-text     { color: white; } 
-.featured-text  { color: #183039; } 
+.light-text     { color: var(--light-text); } 
+.featured-text  { color: var(--featured); } 
 
 .left   { text-align: left; }
 .center { text-align: center; }
@@ -63,13 +73,13 @@ body {
 /* General typography & universal styles  */
 
 body {
-    font-family: 'Martel', serif;
+    font-family: var(--serif);
     font-weight: 200;
 }
 
 h1,h2,h3,h4,h5,h6 {
     font-weight: normal;
-    font-family: 'Didot', Georgia, serif;
+    font-family: var(--heading);
 }
 h1 {
     font-size: 10rem;
@@ -173,7 +183,7 @@ footer h2 {
 /* Images & Background Images */
 
 .bg-image {
-    background-color: #183039;
+    background-color: var(--featured);
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
